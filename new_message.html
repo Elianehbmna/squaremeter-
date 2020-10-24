@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html> 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="chatpage.css">
 </head>
 <body>
@@ -101,53 +101,73 @@
                   </div>
                 </div>
                 <div class="mesgs">
-                  <div class="msg_history">
-                    <div class="incoming_msg">
-                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                      <div class="received_msg">
-                        <div class="received_withd_msg">
-                          <p>Test which is a new approach to have all
-                            solutions</p>
-                          <span class="time_date"> 11:01 AM    |    June 9</span></div>
+                  <div class="container">
+                  <div class="newmessage">
+                    <div class="row">
+                      <div class="col-sm-4">
+                      <img class="icon" src="images/new message.png">
                       </div>
                     </div>
-                    <div class="outgoing_msg">
-                      <div class="outgoing_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                      <div class="sent_msg">
-                        <p>Test which is a new approach to have all
-                          solutions</p>
-                        <span class="time_date"> 11:01 AM    |    June 9</span> </div>
-                    </div>
-                    <div class="incoming_msg">
-                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                      <div class="received_msg">
-                        <div class="received_withd_msg">
-                          <p>Test, which is a new approach to have</p>
-                          <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
+                    <br>
+                    <div class="row">
+                      <div class="col-md-12">
+                      <h4 style="margin-left: 205px;">Your messages</h4>
                       </div>
                     </div>
-                    <div class="outgoing_msg">
-                      <div class="sent_msg">
-                        <p>Apollo University, Delhi, India Test</p>
-                        <span class="time_date"> 11:01 AM    |    Today</span> </div>
-                    </div>
-                    <div class="incoming_msg">
-                      <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                      <div class="received_msg">
-                        <div class="received_withd_msg">
-                          <p>We work directly with our designers and suppliers,
-                            and sell direct to you, which means quality, exclusive
-                            products, at a price anyone can afford.</p>
-                          <span class="time_date"> 11:01 AM    |    Today</span></div>
+                    <div class="row">
+                      <div class="col-md-12">
+                      <p style="margin-left: 170px;">send private photos and messages.</p>
                       </div>
                     </div>
+
+                    <!-- Button trigger modal -->
+                    <div class="row">
+                    <div class="col-md-12">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" style="margin-left: 220px;">
+                      Send message
+                    </button>
+                    </div>
+                    </div>
+                  
+                    <div class="modal" id="myModal">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                        
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                            <h5 class="modal-title text-center" style="margin-left: 170px;">New Message</h5>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                          </div>
+                          <div class="modal-header">
+                            <div class="form-group row">
+                              <h5 for="inputUsername" class="col-sm-2 col-form-label">To:</h5>
+                              <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputUsername" placeholder="Search" style="border: none;
+                                border-color: transparent;">
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            <h5>Suggested</h5>
+                            <br>
+                            <p>Nyamuniga Kenneth</p>
+                            <p>Habimana Eliane</p>
+                  
+                            <p></p>
+                          </div>
+                          
+                          
+                    
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                   
                   </div>
-                  <div class="type_msg">
-                    <div class="input_msg_write">
-                      <input type="text" class="write_msg" placeholder="Type a message" />
-                      <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-                    </div>
-                  </div>
+                </div>
                 </div>
               </div>
               
