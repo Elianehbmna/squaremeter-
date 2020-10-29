@@ -146,3 +146,22 @@ img{ max-width:100%;}
   margin-left: 240px;
   width: 50%;
 }
+#myUL li a {
+  margin-top: -1px; /* Prevent double borders */
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;}
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+.modal{
+  height: 400px;
+}
